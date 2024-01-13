@@ -1,0 +1,77 @@
+/* General Styles */
+.chatbot-container {
+  position: fixed;
+  background-color: #161515;
+  border: 1px solid #ccc;
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV7x1Hm_9haaWQvfueLtcmWL9U8EKTodc_-A&usqp=CAU');
+  width: 80%;
+  left: 10%;
+  color: #1a1919;
+  top: 5%;
+  z-index: 9999;
+}
+
+/* Chat Content Styles */
+.chat-content {
+  display: flex;
+  flex-direction: column;
+  color: #242323;
+}
+
+/* Chat Messages Styles */
+.chat-messages {
+  margin-bottom: 2%;
+  max-height: 70%;
+  overflow-y: auto;
+  color: #e0e0e0;
+}
+
+.bot-message {
+  background-color: hsl(0, 2%, 9%);
+  padding: 1%;
+  border-radius: 4px;
+  margin-bottom: 1%;
+}
+
+/* Chat Input Styles */
+.chat-input {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  flex: 1;
+  padding: 1%;
+  border: 1px solid #f3ebeb;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1.5%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+  .chatbot-container {
+    width: 90%;
+    left: 5%;
+    top: 5%;
+  }
+}
+
+/* Rectangle Styles */
+@media only screen and (min-aspect-ratio: 1/1) {
+  .chatbot-container {
+    width: 25%;
+    left: 25%;
+    top: 10%;
+  }
+}
